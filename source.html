@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+                <style></style>
+            </head>
+            <body>
+                
+    
+        <meta charset="UTF-8">
+        <title>My 1st Mini Test 第一個小測試網站</title>
+    
+    
+        <h3>翻譯小測試</h3>
+        Q1. Apple = ?<br>
+        <input type="radio" name="q1" id="ans1">梨子
+        <input type="radio" name="q1" id="ans2">蘋果
+        <input type="radio" name="q1" id="ans3">榴槤
+        <button onclick="question1()">Submit</button>
+        <p id="results1">Correct! <img src="https://www.citypng.com/public/uploads/preview/hd-green-mark-tick-symbol-icon-sign-png-701751695051738x2kpqds6js.png" width="10%"></p>
+
+        Q2. Banana = ?<br>
+        <input type="radio" name="q2" id="ans4">香蕉
+        <input type="radio" name="q2" id="ans5">西瓜
+        <input type="radio" name="q2" id="ans6">梨子
+        <button onclick="question2()">Submit</button>
+        <p id="results2">Correct! <img src="https://www.citypng.com/public/uploads/preview/hd-green-mark-tick-symbol-icon-sign-png-701751695051738x2kpqds6js.png" width="10%"></p>
+
+        Q3. Cat = ?<br>
+        <input type="radio" name="q3" id="ans7">狗
+        <input type="radio" name="q3" id="ans8">鳥
+        <input type="radio" name="q3" id="ans9">貓
+        <button onclick="question3()">Submit</button>
+        <p id="results3">oops, Wrong! <img src="https://img.freepik.com/free-psd/red-circle-button-with-white-x-wrong-incorrect-no-cancel-deny-refuse_84443-55687.jpg?semt=ais_hybrid&amp;w=740&amp;q=80" width="10%"></p>
+    
+
+                <script>function question1(){
+    var ans1 = document.getElementById("ans1")
+    var ans2 = document.getElementById("ans2")
+    var ans3 = document.getElementById("ans3")
+    
+    if(ans2.checked){
+        document.getElementById("results1").
+        innerHTML = "Correct! <img src='https://www.citypng.com/public/uploads/preview/hd-green-mark-tick-symbol-icon-sign-png-701751695051738x2kpqds6js.png' width='10%'>";
+    }else if(ans1.checked || ans3.checked){
+        document.getElementById("results1").
+        innerHTML = "oops, Wrong! <img src='https://img.freepik.com/free-psd/red-circle-button-with-white-x-wrong-incorrect-no-cancel-deny-refuse_84443-55687.jpg?semt=ais_hybrid&w=740&q=80' width='10%'>";
+    }
+}
+function question2(){
+    var ans4 = document.getElementById("ans4")
+    var ans5 = document.getElementById("ans5")
+    var ans6 = document.getElementById("ans6")
+    
+    if(ans4.checked){
+        document.getElementById("results2").
+        innerHTML = "Correct! <img src='https://www.citypng.com/public/uploads/preview/hd-green-mark-tick-symbol-icon-sign-png-701751695051738x2kpqds6js.png' width='10%'>";
+    }else if(ans5.checked || ans6.checked){
+        document.getElementById("results2").
+        innerHTML = "oops, Wrong! <img src='https://img.freepik.com/free-psd/red-circle-button-with-white-x-wrong-incorrect-no-cancel-deny-refuse_84443-55687.jpg?semt=ais_hybrid&w=740&q=80' width='10%'>";
+    }
+}
+function question3(){
+    var ans4 = document.getElementById("ans7")
+    var ans5 = document.getElementById("ans8")
+    var ans6 = document.getElementById("ans9")
+    
+    if(ans9.checked){
+        document.getElementById("results3").
+        innerHTML = "Correct! <img src='https://www.citypng.com/public/uploads/preview/hd-green-mark-tick-symbol-icon-sign-png-701751695051738x2kpqds6js.png' width='10%'>";
+    }else if(ans7.checked || ans8.checked){
+        document.getElementById("results3").
+        innerHTML = "oops, Wrong! <img src='https://img.freepik.com/free-psd/red-circle-button-with-white-x-wrong-incorrect-no-cancel-deny-refuse_84443-55687.jpg?semt=ais_hybrid&w=740&q=80' width='10%'>";
+    }
+}</script>
+            
+        
+    </body>
